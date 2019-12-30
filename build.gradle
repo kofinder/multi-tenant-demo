@@ -29,12 +29,13 @@ ext {
 }
 
 dependencies {
+
+
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-amqp'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
-	implementation 'org.springframework.boot:spring-boot-starter-jersey'
 	implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
@@ -47,6 +48,14 @@ dependencies {
 	
 	implementation 'io.swagger:swagger-annotations:1.6.0'
 	implementation 'io.swagger:swagger-jersey2-jaxrs:1.6.0'
+	
+	implementation 'avax.ws.rs:jsr311-api:1.1.1'
+	implementation 'com.sun.jersey:jersey-core:1.19.4'
+	implementation 'com.sun.jersey:jersey-servlet:1.19.4'
+	implementation 'com.sun.jersey:jersey-server:1.19.4'
+	implementation 'com.sun.jersey:jersey-json:1.19.4'
+	implementation 'com.sun.jersey.contribs:jersey-spring:1.19.4'
+	implementation 'com.sun.jersey.contribs:jersey-multipart:1.19.4'
 	
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'

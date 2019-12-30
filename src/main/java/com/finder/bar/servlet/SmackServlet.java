@@ -8,7 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
-public class SmackServlet implements Servlet{
+public class SmackServlet implements Servlet {
 
 	@Override
 	public void init(ServletConfig config) throws ServletException {
